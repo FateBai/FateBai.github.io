@@ -73,7 +73,7 @@ Vector'(man) = [x_1,x_2,x_3]</script><p>某些技术指词嵌入技术，比如$
 </tbody>
 </table>
 </div>
-<p>这样一个句子就转化成了矩阵，每一行是一个单词的词向量。实际上词向量列数有很多，整个矩阵大小是$sequence_length\ ×\  d<em>{model}$​​​ , 而真正的输入$X$​​，是很多个这样类似的矩阵，是一个 $batch_size\ ×\  sequence_length\ ×\  d</em>{model}$​​​​​​  的张量。</p>
+<p>这样一个句子就转化成了矩阵，每一行是一个单词的词向量。实际上词向量列数有很多，整个矩阵大小是$sequence_length ×  d<em>{model}$​​​​​ , 而真正的输入$X$​​​​，是很多个这样类似的矩阵，是一个 $batch_size ×  sequence_length ×  d</em>{model}$​​​​​​​​  的张量。</p>
 <p>$d_{model}$ 论文中大小采用512。</p>
 <p>$batch_size$​​ 一般指同时代入训练模型的实例个数。因为你总不能把所有句子所代表的矩阵全扔进去。</p>
 <h4 id="2-position-embedding-位置嵌入"><a href="#2-position-embedding-位置嵌入" class="headerlink" title="2. position embedding (位置嵌入)"></a>2. position embedding (位置嵌入)</h4><p>位置信息在翻译当中是重要的。</p>
