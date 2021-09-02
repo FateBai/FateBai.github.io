@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>As Beginning</title>
-    <url>/2021/08/14/As-a-beginning/</url>
-    <content><![CDATA[<h2 id="应该叫作，一个开始"><a href="#应该叫作，一个开始" class="headerlink" title="应该叫作，一个开始"></a>应该叫作，一个开始</h2><p>应该先从blog的题目开始说起。As the bug of fate. 扑面而来的中二气息，可能你过了许久，看到这里仍然不太适应。很好，要的就是这种感觉，当你适应了，那更好，你是这个blog的挚友了。核心还是对于这个bug的理解。B-U-G。如果你对这个题目的理解是，super lucky man，那么显然和我不在一拍上。Bug 就是 bug。从主体意识诞生，脱离主体掌控，给予主体混沌。既然已经是命运的弃子，做一个fate的漏洞有什么不好？至少，我的坏运气来自我的无能，我的好运气，来自我的强大，我的所有抱怨，都将说给我自己。</p>
-<p>这是一个测试，我不打算删除。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>入门Transformer</title>
     <url>/2021/08/15/%E5%85%A5%E9%97%A8Transformer/</url>
     <content><![CDATA[<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h2><p>2017年Google提出Transformer模型。过去了四年，想要入门Transformer原本是非常容易的，网上的资源一搜一大堆，但是大同小异，或者说没说到的地方都没说到，初学者看了之后除非悟性极好，否则还是不能理解(比如我)。所以我想尽量详细地叙述这个模型，综合网上各种贴子，可能你会有熟悉感。</p>
@@ -73,7 +66,7 @@ Vector'(man) = [x_1,x_2,x_3]</script><p>某些技术指词嵌入技术，比如$
 </tbody>
 </table>
 </div>
-<p>这样一个句子就转化成了矩阵，每一行是一个单词的词向量。实际上词向量列数有很多，整个矩阵大小是$sequence_length\ ×\  d_{model}$​​​​​ , 而真正的输入$X$​​​​，是很多个这样类似的矩阵，是一个 $batch_size\ ×\  sequence_length\ ×\  d_{model}$​​​​​​​​  的张量。</p>
+<p>这样一个句子就转化成了矩阵，每一行是一个单词的词向量。实际上词向量列数有很多，整个矩阵大小是$sequence_length ×  d_{model}$​​​​​ , 而真正的输入$X$​​​​，是很多个这样类似的矩阵，是一个 $batch_size ×  sequence_length ×  d_{model}$​​​​​​​​  的张量。</p>
 <p>$d_{model}$ 论文中大小采用512。</p>
 <p>$batch_size$​​ 一般指同时代入训练模型的实例个数。因为你总不能把所有句子所代表的矩阵全扔进去。</p>
 <h4 id="2-position-embedding-位置嵌入"><a href="#2-position-embedding-位置嵌入" class="headerlink" title="2. position embedding (位置嵌入)"></a>2. position embedding (位置嵌入)</h4><p>位置信息在翻译当中是重要的。</p>
@@ -144,5 +137,12 @@ ReLu(x) = max\{0,x\}</script><p><img src="/2021/08/15/%E5%85%A5%E9%97%A8Transfor
       <categories>
         <category>AI学习</category>
       </categories>
+  </entry>
+  <entry>
+    <title>As Beginning</title>
+    <url>/2021/08/14/As-a-beginning/</url>
+    <content><![CDATA[<h2 id="应该叫作，一个开始"><a href="#应该叫作，一个开始" class="headerlink" title="应该叫作，一个开始"></a>应该叫作，一个开始</h2><p>应该先从blog的题目开始说起。As the bug of fate. 扑面而来的中二气息，可能你过了许久，看到这里仍然不太适应。很好，要的就是这种感觉，当你适应了，那更好，你是这个blog的挚友了。核心还是对于这个bug的理解。B-U-G。如果你对这个题目的理解是，super lucky man，那么显然和我不在一拍上。Bug 就是 bug。从主体意识诞生，脱离主体掌控，给予主体混沌。既然已经是命运的弃子，做一个fate的漏洞有什么不好？至少，我的坏运气来自我的无能，我的好运气，来自我的强大，我的所有抱怨，都将说给我自己。</p>
+<p>这是一个测试，我不打算删除。</p>
+]]></content>
   </entry>
 </search>
