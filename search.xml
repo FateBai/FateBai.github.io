@@ -75,7 +75,7 @@ Vector'(man) = [x_1,x_2,x_3]</script><p>某些技术指词嵌入技术，比如$
 </div>
 <p>这样一个句子就转化成了矩阵，每一行是一个单词的词向量。实际上词向量列数有很多，整个矩阵大小是$sequenceLength\ ×\ d_{model}$​​​​​​​​​​​​​​​​​​​​​ , 而真正的输入$X$​​​​​​​​​​​​​​​​​​​​，是很多个这样类似的矩阵，是一个 $batchSize\ ×\  sequenceLength\ ×\  d_{model}$​​​​​​​​​​​​​​​​​​​​​​​​  的张量。</p>
 <p>$d_{model}$ 论文中大小采用512。</p>
-<p>$batchSize$​​​ 一般指同时代入训练模型的实例个数。因为你总不能把所有句子所代表的矩阵全扔进去。</p>
+<p>$batchSize$​​ 一般指同时代入训练模型的实例个数。因为你总不能把所有句子所代表的矩阵全扔进去。</p>
 <h4 id="2-position-embedding-位置嵌入"><a href="#2-position-embedding-位置嵌入" class="headerlink" title="2. position embedding (位置嵌入)"></a>2. position embedding (位置嵌入)</h4><p>位置信息在翻译当中是重要的。</p>
 <p>You do like it. (你确实喜欢它) Do you like it? (你喜欢它吗？) 翻译上存在不同。</p>
 <p>position embedding 就是刻画位置信息的编码，类似于词向量。</p>
@@ -84,7 +84,7 @@ Vector'(man) = [x_1,x_2,x_3]</script><p>某些技术指词嵌入技术，比如$
 <p>论文当中采用三角式，</p>
 <p>$PE(pos,2i) = sin(pos/10000^{2i/d_{model}})$</p>
 <p>$PE(pos,2i+1) = cos(pos/10000^{2i/d_{model}})$​</p>
-<p>$pos$​​ 是单词在句子中的位置，$pos\in [0,sequenceLength)$​​ , $i \in [0,d_{model})$​​</p>
+<p>$pos$​ 是单词在句子中的位置，$pos\in [0,sequenceLength)$​ , $i \in [0,d_{model})$​</p>
 <p>而事实上，目前三角式用处比较小，相对位置编码更加重要，见</p>
 <p><a href="https://mp.weixin.qq.com/s/vXYJKF9AViKnd0tbuhMWgQ">https://mp.weixin.qq.com/s/vXYJKF9AViKnd0tbuhMWgQ</a></p>
 <p>最后信息添加的方式也非常简单，直接将输入矩阵$X = X+PE(X)$​​​​</p>
@@ -142,7 +142,7 @@ ReLu(x) = max\{0,x\}</script><p><img src="/2021/09/02/Transformer%E5%AD%A6%E4%B9
 <p>2021/9/1 BRB， a Observer</p>
 <h4 id><a href="#" class="headerlink" title=" "></a> </h4>]]></content>
       <categories>
-        <category>AI学习</category>
+        <category>Machine Learning</category>
       </categories>
   </entry>
 </search>
